@@ -1,7 +1,7 @@
 import { item, StyleQuantity, TrimTitle, GetPrice } from './utils';
 import './Listing.css'
 
-function Listing({ items = [] as item[] }) {
+function Listing({ items }: { items: item[] }) {
     let elements = [];
     for (let i = 0; i < items.length; i++) {
         elements.push(

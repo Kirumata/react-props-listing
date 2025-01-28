@@ -9,7 +9,7 @@ function App() {
   const items = JSON.parse(text);
 
 
-  let array = [] as item[];
+  let array: item[] = [];
 
   for (let i = 0; i < items.length; i++) {
     if (items[i].state == "active") {
